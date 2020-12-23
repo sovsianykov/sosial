@@ -9,13 +9,13 @@ return (
     <tr>
         <th className="monthMame">January</th>
         <td>
-            <input type="text" value={month} />
+            <input type="text" value={month.pe} />
         </td>
         <td>
             <input type="text" value={month} />
         </td>
         <td>
-        <input type="text" value={month} />
+            <input type="date" value={month} />
         </td>
          <td>
             <input type="text" value={month} />
@@ -27,7 +27,7 @@ return (
             <input type="text" value={month} />
         </td>
         <td>
-            <input type="text" value={month} />
+            <input type="date" value={month} />
         </td>
         <td>
             <input type="text" value={month} />
@@ -39,7 +39,7 @@ return (
             <input type="text" value={month} />
         </td>
         <td>
-            <input type="text" value={month} />
+            <input type="date" value={month} />
         </td>
         <td>
             <input type="text" value={month} />

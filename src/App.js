@@ -5,7 +5,7 @@ import './App.css';
 class App extends Component {
    state = {
        months : [ { id:1, completed: 'false',
-           pe:'', dpe: '', dbte:'', vle:'',
+           pe:'1', dpe: '', dbte:'', vle:'',
            we:'', wpe: '', wbte:'', wle:'',
            se:'', spe: '', sbte:'', sle:''
        }
@@ -44,6 +44,7 @@ class App extends Component {
 
                     {this.state.months.map(month => {
                         return <Month month = {month }
+                                      pe = {month.pe }
                         />
                     })}
 

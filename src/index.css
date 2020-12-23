@@ -27,7 +27,7 @@ table, th, td {
   border-collapse: collapse;
 
 }
-th, td {
+th {
   padding: 15px;
 }
 input {
