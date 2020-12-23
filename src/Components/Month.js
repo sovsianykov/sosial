@@ -3,53 +3,47 @@ import React  from 'react';
 
 
 
-function Month({month}) {
+function Month(props) {
 
 return (
     <tr>
         <th className="monthMame">January</th>
-        <td>
-            <input type="text" value={month.pe} />
+        <td className="pay">
+            <span>{props.pe}</span>
         </td>
         <td>
-            <input type="text" value={month} />
+            <span>{props.dpe}</span>
         </td>
         <td>
-            <input type="date" value={month} />
-        </td>
-         <td>
-            <input type="text" value={month} />
-         </td>
-        <td>
-            <input type="text" value={month} />
+            <span>{props.dbte}</span>
         </td>
         <td>
-            <input type="text" value={month} />
+            <span>{props.vle}</span>
+        </td>
+        <td className="pay">
+            <span>{props.we}</span>
         </td>
         <td>
-            <input type="date" value={month} />
+            <span>{props.wpe}</span>
         </td>
         <td>
-            <input type="text" value={month} />
+            <span>{props.wbte}</span>
         </td>
         <td>
-            <input type="text" value={month} />
+            <span>{props.wle}</span>
+        </td>
+        <td className="pay">
+                <span>{props.se}</span>
         </td>
         <td>
-            <input type="text" value={month} />
+                <span>{props.spe}</span>
         </td>
         <td>
-            <input type="date" value={month} />
+            <span>{props.sbte}</span>
         </td>
-        <td>
-            <input type="text" value={month} />
-        </td>
-
-
-
-
-
-
+            <td>
+                <span>{props.sle}</span>
+            </td>
 
 
     </tr>

@@ -27,10 +27,19 @@ table, th, td {
   border-collapse: collapse;
 
 }
-th,td {
-  padding: 15px;
+th {
+  padding: 10px;
 }
 input {
   display: block;
   width: 100%;
+  height: 30px;
 }
+ td {
+  width: 70px;
+     font-size: 1.2rem;
+     text-align: center;
+}
+ td.pay {
+     color: brown;
+ }
