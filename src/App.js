@@ -45,6 +45,7 @@ class App extends Component {
                     {this.state.months.map(month => {
                         return <Month month = {month }
                                       pe = {month.pe }
+                                      key = {month.id }
                         />
                     })}
 
