@@ -3,7 +3,7 @@ import React from "react";
 function Month(props) {
   return (
     <tr>
-      <th className="monthMame">January</th>
+      <th className="monthMame">{props.name}</th>
       <td className="pay">
         <span>{props.pe}</span>
       </td>

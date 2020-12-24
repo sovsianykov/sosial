@@ -36,7 +36,7 @@ input {
   height: 30px;
 }
  td {
-  /*width: 70px;*/
+  width: 100px;
      font-size: 1.2rem;
      text-align: center;
 }
@@ -44,20 +44,40 @@ input {
      color: #861717;
  }
  input {
-     animation: animate1 3s forwards 1s ease-in-out infinite;
  }
  input:active {
      border: none;
  }
-/*@keyframes animate1  {*/
-/*    20% { color: #ae3b3b;*/
+ button.mode {
+     width: 135px;
+     height: 30px;
+     background: #e32a14;
+     color: #dae3ee;
+     font-weight: 800;
+     display: none;
+     animation: animate1 3s forwards  ease-in-out infinite;
 
-/*    } 40% {color: #e3a8a8;*/
+ }
+ .active {
+     display: block;
+     width: 135px;
+     height: 30px;
+     background: #e32a14;
+     color: #dae3ee;
+     font-weight: 800;
+     animation: animate1 3s forwards  ease-in-out infinite;
 
-/*    } 40% {color: #efefef;*/
+ }
 
-/*    } 80% {color: #dd6c6c;*/
+@keyframes animate1  {
+    20% {  background: #e32a14;
 
-/*    } 100% {color: brown;*/
-/*    */
-/*} }*/
+    } 40% { background: #e58e83;
+
+    } 40% { background: #efefef;
+
+    } 80% { background: #dd6c6c;
+
+    } 100% { background: #e32a14;
+
+} }
