@@ -17,16 +17,24 @@ code {
 }
 table {
   width: 100%;
+    margin-bottom: 40px;
 }
 table th {
   background: #dae3ee;
 
 }
 table, th, td {
-  border: 3px solid black;
+  border: 1px solid #ccc;
   border-collapse: collapse;
+  font-size: 1.1rem;
+}
+table.template td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    font-size: .8rem;
 
 }
+
 th {
   padding: 10px;
 }
@@ -44,6 +52,11 @@ input {
      font-size: 1.2rem;
      text-align: center;
 }
+ td.Yearcell {
+     padding: 0;
+     align-items:center ;
+
+ }
  td.pay {
      color: #861717;
  }

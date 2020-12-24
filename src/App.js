@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Month from "./Components/Month";
+import Year from "./Components/Year";
 import "./App.css";
 
 class App extends Component {
@@ -8,38 +9,41 @@ class App extends Component {
       {
         id: 1,
         completed: "false",
+        name : "set new month",
+        pe: "dbl click ",
+        dpe: "dbl click ",
+        dbte:"dbl click ",
+        vle:"dbl click ",
+        we: "dbl click ",
+        wpe: "dbl click ",
+        wbte: "dbl click ",
+        wle: "dbl click ",
+        se: "dbl click ",
+        spe: "dbl click ",
+        sbte: "dbl click ",
+        sle: "dbl click ",
+      }
+
+    ],
+    monthForYear : [
+      {
+        id: 1,
+        completed: "false",
         name : "January",
-        pe: "780",
-        dpe: "50",
-        dbte: "20-1-2020",
+        pe: "700",
+        dpe: "45",
+        dbte:'',
         vle: "12345",
-        we: "400",
-        wpe: "35",
+        we: "t",
+        wpe: "456",
         wbte: "20-1-2020",
         wle: "5",
-        se: "700",
-        spe: "400",
+        se: "600",
+        spe: "888",
         sbte: "20-1-2020",
         sle: "6",
-      },
-      {
-        id: 2,
-        completed: "false",
-        name : "February",
-        pe: "790",
-        dpe: "30",
-        dbte: "20-2-2020",
-        vle: "456788",
-        we: "478",
-        wpe: "36",
-        wbte: "20-2-2020",
-        wle: "7",
-        se: "750",
-        spe: "405",
-        sbte: "20-5-2020",
-        sle: "7",
       }
-    ],
+    ]
   };
   editHandler = (event) => {
     document.querySelector('button ').className = 'active';
@@ -61,7 +65,7 @@ class App extends Component {
         <div className="container">
           <h1>Utility Bills</h1>
 
-          <table >
+          <table  className='template'>
             <thead>
               <tr>
                 <th rowSpan="2" colSpan="1">
@@ -111,9 +115,23 @@ class App extends Component {
                 );
               })}
             </tbody>
+            </table>
+            <table>
+              <thead>
+              <tr>
+                <th colSpan= '13'>Year </th>
+
+              </tr>
+              </thead>
+
+
+             <Year monthForYear = {this.state.monthForYear}/>
+
+
           </table>
           <div className="ButtonToolbar">
-            <button className="mode">EDITOR MODE</button>
+            <button className="mode">Set New Month</button>
+
             {/*<button className="save">SAVE CHANGES</button>*/}
           </div>
         </div>
