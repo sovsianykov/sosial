@@ -42,8 +42,7 @@ class App extends Component {
     ],
   };
   editHandler = (event) => {
-    document.querySelector('button.mode').className = 'active';
-    document.querySelector('button.save').className = 'show';
+    document.querySelector('button ').className = 'active';
     let input = document.createElement("input");
     let cell = event.target;
     input.style.fontSize = "1.2rem";
@@ -115,7 +114,7 @@ class App extends Component {
           </table>
           <div className="ButtonToolbar">
             <button className="mode">EDITOR MODE</button>
-            <button className="save">SAVE CHANGES</button>
+            {/*<button className="save">SAVE CHANGES</button>*/}
           </div>
         </div>
       </div>

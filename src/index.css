@@ -47,12 +47,11 @@ input {
  td.pay {
      color: #861717;
  }
- input {
- }
+
  input:active {
      border: none;
  }
- button {
+ button.mode {
      margin-top: 20px;
      width: 160px;
      height: 30px;
@@ -66,19 +65,8 @@ input {
      /*animation: animate1 3s forwards  ease-in-out infinite;*/
 
  }
-.save.active  {
-    background: #dae3ee;
-    color: black;
-    display: block;
-    margin-left: 20px;
-}
-.show {
-    background: #dae3ee;
-    color: black;
-    margin-left: 20px;
 
-    display: block;
-}
+
 
 
  .active  {
@@ -95,9 +83,7 @@ input {
      animation: animate1 2s forwards  ease-in-out infinite;
 
  }
-button.save.active {
-    background: #dae3ee;
-}
+
 
 
 @keyframes animate1  {
@@ -112,7 +98,5 @@ button.save.active {
     } 100% { background: #e32a14;
 
 } }
-.ButtonToolbar {
-    display: flex;
-}
+
 
