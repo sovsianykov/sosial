@@ -1,60 +1,46 @@
-import React  from 'react';
+import React from "react";
 
-
-
-
-function Month({month}) {
-
-return (
+function Month(props) {
+  return (
     <tr>
-        <th className="monthMame">January</th>
-        <td>
-            <input type="text" value={month.pe} />
-        </td>
-        <td>
-            <input type="text" value={month} />
-        </td>
-        <td>
-            <input type="date" value={month} />
-        </td>
-         <td>
-            <input type="text" value={month} />
-         </td>
-        <td>
-            <input type="text" value={month} />
-        </td>
-        <td>
-            <input type="text" value={month} />
-        </td>
-        <td>
-            <input type="date" value={month} />
-        </td>
-        <td>
-            <input type="text" value={month} />
-        </td>
-        <td>
-            <input type="text" value={month} />
-        </td>
-        <td>
-            <input type="text" value={month} />
-        </td>
-        <td>
-            <input type="date" value={month} />
-        </td>
-        <td>
-            <input type="text" value={month} />
-        </td>
-
-
-
-
-
-
-
-
+      <th className="monthMame">{props.name}</th>
+      <td className="pay">
+        <span>{props.pe}</span>
+      </td>
+      <td>
+        <span>{props.dpe}</span>
+      </td>
+      <td>
+        <span>{props.dbte}</span>
+      </td>
+      <td>
+        <span>{props.vle}</span>
+      </td>
+      <td className="pay">
+        <span>{props.we}</span>
+      </td>
+      <td>
+        <span>{props.wpe}</span>
+      </td>
+      <td>
+        <span>{props.wbte}</span>
+      </td>
+      <td>
+        <span>{props.wle}</span>
+      </td>
+      <td className="pay">
+        <span>{props.se}</span>
+      </td>
+      <td>
+        <span>{props.spe}</span>
+      </td>
+      <td>
+        <span>{props.sbte}</span>
+      </td>
+      <td>
+        <span>{props.sle}</span>
+      </td>
     </tr>
-  )
+  );
 }
 export default Month;
-
-
