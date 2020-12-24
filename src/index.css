@@ -33,10 +33,14 @@ th {
 input {
   display: block;
   width: 100%;
-  height: 30px;
+  line-height: 24px;
+    text-align: center;
+
 }
  td {
   width: 100px;
+     line-height: 24px;
+
      font-size: 1.2rem;
      text-align: center;
 }
@@ -48,26 +52,53 @@ input {
  input:active {
      border: none;
  }
- button.mode {
-     width: 135px;
+ button {
+     margin-top: 20px;
+     width: 160px;
      height: 30px;
      background: #e32a14;
      color: #dae3ee;
-     font-weight: 800;
+     font-weight: 600;
+     letter-spacing: .1em;
+     border-radius: 5px;
+     border: none;
      display: none;
-     animation: animate1 3s forwards  ease-in-out infinite;
+     /*animation: animate1 3s forwards  ease-in-out infinite;*/
 
  }
- .active {
+.save.active  {
+    background: #dae3ee;
+    color: black;
+    display: block;
+    margin-left: 20px;
+}
+.show {
+    background: #dae3ee;
+    color: black;
+    margin-left: 20px;
+
+    display: block;
+}
+
+
+ .active  {
+     margin-top: 20px;
      display: block;
-     width: 135px;
+     border: none;
+     border-radius: 5px;
+     width: 160px;
      height: 30px;
      background: #e32a14;
      color: #dae3ee;
-     font-weight: 800;
-     animation: animate1 3s forwards  ease-in-out infinite;
+     font-weight: 600;
+     letter-spacing: .2em;
+     animation: animate1 2s forwards  ease-in-out infinite;
 
  }
+button.save.active {
+    background: #dae3ee;
+}
+
 
 @keyframes animate1  {
     20% {  background: #e32a14;
@@ -81,3 +112,7 @@ input {
     } 100% { background: #e32a14;
 
 } }
+.ButtonToolbar {
+    display: flex;
+}
+

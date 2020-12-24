@@ -42,13 +42,15 @@ class App extends Component {
     ],
   };
   editHandler = (event) => {
-    document.querySelector('button').className = 'active';
+    document.querySelector('button.mode').className = 'active';
+    document.querySelector('button.save').className = 'show';
     let input = document.createElement("input");
     let cell = event.target;
-    input.style.fontSize = "24px";
+    input.style.fontSize = "1.2rem";
     input.style.color = "red";
     input.style.border = "none";
     input.style.textAlign = "center";
+    input.style.padding = " 10px 0";
     input.value = cell.textContent;
     cell.innerHTML = "";
     cell.appendChild(input);
@@ -59,9 +61,7 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <h1>Utility Bills</h1>
-          <div className="ButtonToolbar">
-           <button className="mode">EDITOR MODE</button>
-          </div>
+
           <table >
             <thead>
               <tr>
@@ -113,6 +113,10 @@ class App extends Component {
               })}
             </tbody>
           </table>
+          <div className="ButtonToolbar">
+            <button className="mode">EDITOR MODE</button>
+            <button className="save">SAVE CHANGES</button>
+          </div>
         </div>
       </div>
     );
