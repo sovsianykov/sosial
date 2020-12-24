@@ -12,7 +12,7 @@ code {
     monospace;
 }
 .container {
- max-width: 1100px;
+ max-width: 1400px;
   margin: 0 auto;
 }
 table {
@@ -36,10 +36,28 @@ input {
   height: 30px;
 }
  td {
-  width: 70px;
+  /*width: 70px;*/
      font-size: 1.2rem;
      text-align: center;
 }
  td.pay {
-     color: brown;
+     color: #861717;
  }
+ input {
+     animation: animate1 3s forwards 1s ease-in-out infinite;
+ }
+ input:active {
+     border: none;
+ }
+/*@keyframes animate1  {*/
+/*    20% { color: #ae3b3b;*/
+
+/*    } 40% {color: #e3a8a8;*/
+
+/*    } 40% {color: #efefef;*/
+
+/*    } 80% {color: #dd6c6c;*/
+
+/*    } 100% {color: brown;*/
+/*    */
+/*} }*/
