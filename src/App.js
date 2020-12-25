@@ -93,27 +93,45 @@ class App extends Component {
             </thead>
             <tbody onClick={this.editHandler.bind(this)}>
 
-              {this.state.months.map((month) => {
-                return (
-                  <Month
-                    name = {month.name}
-                    month={month}
-                    pe={month.pe}
-                    dpe={month.dpe}
-                    dbte={month.dbte}
-                    vle={month.vle}
-                    we={month.we}
-                    wpe={month.wpe}
-                    wbte={month.wbte}
-                    wle={month.wle}
-                    se={month.se}
-                    spe={month.spe}
-                    sbte={month.sbte}
-                    sle={month.sle}
-                    key={month.id}
-                  />
-                );
-              })}
+            <tr>
+              <th className="monthMame">{this.state.months.name}</th>
+              <td className="pay">
+                <span>{this.state.months.pe}</span>
+              </td>
+              <td>
+                <span>{this.state.months.dpe}</span>
+              </td>
+              <td>
+                <span>{this.state.months.dbte}</span>
+              </td>
+              <td>
+                <span>{this.state.months.vle}</span>
+              </td>
+              <td className="pay">
+                <span>{this.state.months.we}</span>
+              </td>
+              <td>
+                <span>{this.state.months.wpe}</span>
+              </td>
+              <td>
+                <span>{this.state.months.wbte}</span>
+              </td>
+              <td>
+                <span>{this.state.months.wle}</span>
+              </td>
+              <td className="pay">
+                <span>{this.state.months.se}</span>
+              </td>
+              <td>
+                <span>{this.state.months.spe}</span>
+              </td>
+              <td>
+                <span>{this.state.months.sbte}</span>
+              </td>
+              <td>
+                <span>{this.state.months.sle}</span>
+              </td>
+            </tr>
             </tbody>
             </table>
             <table>
