@@ -49,6 +49,7 @@ class App extends Component {
     document.querySelector('button ').className = 'active';
     let input = document.createElement("input");
     let cell = event.target;
+    console.log(cell)
     input.style.fontSize = "1.2rem";
     input.style.color = "red";
     input.style.border = "none";
@@ -56,7 +57,13 @@ class App extends Component {
     input.style.padding = " 10px 0";
     input.value = cell.textContent;
     cell.innerHTML = "";
+
     cell.appendChild(input);
+    input.addEventListener('dblclick', function () {
+      console.log(input.value)
+
+    })
+
   }
 
   render() {
